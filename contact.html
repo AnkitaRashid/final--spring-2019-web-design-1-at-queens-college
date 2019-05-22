@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ankita Rashid</title>
+      <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/stylesheet.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".hamburger-btn .fa-times").hide();
+
+  $(".hamburger-btn .fa-bars").click(function(){
+    $(this).hide();
+    $(".hamburger-btn .fa-times").show();
+    $(".mob ul").addClass("active");
+  });
+
+  $(".hamburger-btn .fa-times").click(function(){
+    $(this).hide();
+    $(".hamburger-btn .fa-bars").show();
+    $(".mob ul").removeClass("active");
+  });
+  });
+</script>
+ </head>
+ <body>
+   <header>
+     <div class="container">
+       <nav>
+         <h1 class="brand"><a href="index.html">Ankita<span> Rashid</span></a></h1>
+         <ul class="active">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="portfolio.html">Portfolio</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+         </nav>
+ </header>
+
+ <div class="wrapper">
+  <div class="content">
+    <h1>CONTACT FORM</h1>
+    <h1>Connect with me by sending your thoughts.</h1>
+  </div>
+
+  <div class="form">
+
+    <div class="top-form">
+      <div class="inner-form">
+        <div class="label">name</div>
+        <input type="text" placeholder="Jhon">
+      </div>
+      <div class="inner-form">
+        <div class="label">email</div>
+        <input type="text" placeholder="Example@gmail.com">
+      </div>
+      <div class="inner-form">
+        <div class="label">phone</div>
+        <input type="text" placeholder="1234567890">
+      </div>
+    </div>
+
+    <div class="middle-form">
+      <div class="inner-form">
+        <div class="label">subject</div>
+        <input type="text" placeholder="Subject">
+      </div>
+    </div>
+
+    <div class="bottom-form">
+      <div class="inner-form">
+        <div class="label">message</div>
+        <textarea placeholder="Your message"></textarea>
+      </div>
+    </div>
+
+    <div class="btn">send form</div>
+
+  </div>
+</div>
+
+ </body>
+ </html>

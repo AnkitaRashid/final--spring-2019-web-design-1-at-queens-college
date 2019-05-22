@@ -1,0 +1,369 @@
+html{
+  font-size: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width:25px;
+  height:3px;
+  background-color: crimson;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+  .navlinks{
+    width: 60%
+  }
+}
+
+@media screen and (max-width: 750px){
+  .navlinks{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease in;
+  }
+  .navlinks li {
+    opacity: 0%
+  }
+  .burger{
+    display: block;
+  }
+}
+
+.navlinks{
+  display: flex;
+}
+
+.nav-active{
+transform: translateX(0%);
+}
+
+
+
+h2{
+  font-family: 'Patua One';
+  font-size: 30px;
+  text-align: left;
+}
+
+.aboutme{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.me{
+  text-align: justify;
+
+}
+
+p{
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Patua+One';
+  line-height: 25px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 50px;
+}
+
+h3{
+  font-size: 20px;
+  text-align: left;
+  font-family: Alice
+  padding-top: 20px;
+}
+
+figcaption{
+  text-align: center;
+  font-family: Alice;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+
+.container{
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: 20px;
+}
+
+.hero{
+  height: 100vh;
+  width: auto;
+  align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.brand span{
+  color: crimson;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a{
+  padding: 1rem 0;
+  margin: 0 3rem;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+nav ul li a:last-child{
+  margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+
+nav ul li a::before{
+  top: 0;
+  transform-origin: left;
+}
+
+nav ul li a::after{
+  bottom: 0;
+  transform-origin: right;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+hr {
+  display: block;
+  size: 50px;
+  align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cover{
+  height: 600px;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.anim{
+  width: auto;
+  height: 200px;
+  align-items: center;
+}
+
+.z{
+  width: auto;
+  height: 300px;
+  align-items: center;
+}
+
+.gif{
+  width: auto;
+  height: 400px;
+  align-items: center;
+}
+
+.title {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 120rem;
+      padding-top: 20px;
+}
+
+
+.title img {
+      width: auto;
+      float: right;
+}
+
+#flex-container{
+  display: flex;
+  flex-wrap:wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+
+
+.signature img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: auto;
+}
+
+
+* {
+  user-select: none;
+}
+
+body {
+  font-family: 'Patua One';
+}
+
+.wrapper {
+  margin: 100px auto 0;
+  width: 100%;
+  max-width: 680px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: center;
+  margin: auto;
+}
+
+.content h1 {
+  letter-spacing: 1px;
+}
+
+
+/* form */
+.form {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form {
+  width: 100%;
+  min-height: 65px;
+  margin: 10px 0;
+}
+
+.form input[type="text"],
+.form textarea {
+  border: 2px solid #000000;
+  padding: 15px 5px;
+  outline: none;
+  border-radius: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #000000;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+    0 0 8px rgba(255, 0, 0, 0.8);
+}
+
+.form .label {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+
+.top-form .inner-form {
+  width: 29.9%;
+  float: left;
+  margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+  margin-right: 0;
+}
+
+
+.middle-form {
+  clear: both;
+}
+
+.bottom-form textarea {
+  height: 120px;
+}
+
+.btn {
+  background: crimson;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 2px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    margin: 25px auto 0;
+  }
+  .top-form .inner-form {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .top-form,
+  .middle-form,
+  .bottom-form {
+    margin: 5px 0;
+  }
+  .form {
+    margin-top: 10px;
+  }
+  .form input[type="text"],
+  .form textarea {
+     width: 100%;
+     box-sizing: border-box;
+  }
+}
